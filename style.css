@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+scroll-behavior: smooth;
+}
+
+header{
+    background-color: #007777;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    text-decoration: none;
+    color:antiquewhite;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(0, 47, 255);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: antiquewhite;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #07cccc;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+.main h3{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    text-transform:uppercase ;
+    letter-spacing: 2px;
+}
+.main-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #007777;
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.9375em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: 0.5s ease;
+    
+}
+.main-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color:#015050;
+    transform:scale(1.1);
+}
+.Social-icon a {
+    color: aliceblue;
+    font-size: 70px;
+padding-right: 30px;
+transition: 0.5s ease;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color:#007777;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.card{
+    background-color:rgb(255, 255, 255);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(12, 104, 69, 0.356);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.5s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #007777;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3 {
+    color: #007777;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    letter-spacing:1px;
+
+}
+
+.title-proj{
+    display: flex;
+    justify-content: center;
+    color:antiquewhite;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.projects{
+    background-color: #007777;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.card-project{
+    background-color: antiquewhite;
+    border:1px solid antiquewhite;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+   
+
+}
+
+.card-project:hover{
+    transform: scale(1.1);
+}
+
+.card-project .img-proj:hover{
+    opacity: 0.95;
+}
+
+.img-proj img{
+width: 100%;    
+}
+
+
+.project-info{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.project-category{
+    font-size: 0.7em;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+
+.more-details{
+    text-decoration: none;
+    color: #007777;
+    transition: 0.3s ease;
+
+
+}
+
+.more-details:hover{
+    transform: scale(1.1);
+    color: purple;
+    
+
+}
+
+
+.contact .icon{
+    font-size: 4.5em;
+    
+}
+
+.contact .info h3 {
+    color: black;
+}
+
+.contact .info p {
+    font-size: 1.3em ;
+}
+
+.title-f{
+    color: white;
+font-weight: 600;
+}
+   
+footer{
+    background-color:rgb(0, 0, 0);
+    padding: 1.1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.title-f span{
+    color: #007777;
+    
+
+}
+
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3 {
+        font-size: 1.2em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+
+    .card-project{
+        background-color: antiquewhite;
+        border:1px solid antiquewhite;
+        min-height: 14em;
+        width: 18em;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+    .card{
+        background-color:rgb(255, 255, 255);
+        width: 15em;
+        box-shadow: 0 5px 25px rgba(12, 104, 69, 0.356);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: 0.5s ease;
+
+}
+
+}
+@media (max-width:641){
+    body{
+        font-size: 13px;
+    }
+
+    .main h2{
+        font-size: 0.8em;
+
+    }
+    .main h3 {
+        font-size: 1.1em;
+    }
+    .card{
+        background-color:rgb(255, 255, 255);
+        width: 15em;
+        box-shadow: 0 5px 25px rgba(12, 104, 69, 0.356);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: 0.5s ease;
+}
+.info {
+ font-size: 1em;
+
+}
+}
+@media (max-width:300px){
+    body{
+        font-size: 12px;
+
+    }
+    .main h2{
+        font-size: 0.7em;
+    }
+    .main h3 {
+        font-size: 1.3em;
+    }
+    .card-project{
+        background-color: antiquewhite;
+        border:1px solid antiquewhite;
+        min-height: 14em;
+        width: 17em;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    
+}
